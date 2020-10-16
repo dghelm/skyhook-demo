@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
+import useSkynetUpload from '../hooks/useSkynetUpload';
 
 const Uploader = (props) => {
   const [selectedFile, setSelectedFile] = useState(null);
 
-  // We need to implement a hook for upload functionality!
-  const [skylink, status, uploadFile] = ['', '', () => {}];
+  const [skylink, status, uploadFile] = useSkynetUpload();
 
   return (
     <div>
