@@ -4,7 +4,7 @@ import useSkynetUpload from '../hooks/useSkynetUpload';
 
 const Uploader = (props) => {
   const [selectedFile, setSelectedFile] = useState(null);
-  const { skylink, status, uploadFile } = useSkynetUpload();
+  const [skylink, status, uploadFile] = useSkynetUpload();
 
   return (
     <div>

@@ -25,7 +25,7 @@ const useSkynetUpload = () => {
     }
   };
 
-  return { skylink, status, uploadFile };
+  return [skylink, status, uploadFile];
 };
 
 export default useSkynetUpload;
