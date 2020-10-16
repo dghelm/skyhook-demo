@@ -1,5 +1,5 @@
 const useSkynetUpload = () => {
-  // [skylink, status, uploadFile]
+  // To return [skylink, status, uploadFile] values
   return ['', '', () => {}];
 };
 
